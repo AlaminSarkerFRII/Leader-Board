@@ -194,3 +194,47 @@ top blog section
 cite {
     color: orangered;
 }
+
+/*--------------
+ Media quaries
+ --------------------*/
+
+/* -------------------------For Mobile Device-------------- */
+
+@media only screen and (max-width:688px) {
+
+    .header {
+        width: 50%;
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player,
+    .blog,
+    .course {
+        flex-direction: column;
+    }
+}
+
+/* tablete and Medium Device--------------------------- */
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
